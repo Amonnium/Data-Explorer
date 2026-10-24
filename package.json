@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "A UI-independent, project-scoped JSON and XML data explorer.",
   "main": "data-engine.js",
+  "license": "MIT",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Amonnium/Data-Explorer.git"
