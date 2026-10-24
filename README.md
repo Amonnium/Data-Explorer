@@ -6,13 +6,7 @@ A small, local browser UI and a UI-independent Node.js engine for safely explori
 
 This package is a project dependency: it does not install anything globally on your computer.
 
-From a project that should use the engine, install it from GitHub:
-
-```bash
-npm install --save github:Amonnium/Data-Explorer
-```
-
-After the package is published to npm, the equivalent project-local installation will be:
+To install it into a project that should use the engine, install it from **npm**, with this command:
 
 ```bash
 npm install --save @amonnium/data-explorer
