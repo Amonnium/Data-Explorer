@@ -5,7 +5,14 @@
   "main": "data-engine.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/Amonnium/Data-Explorer.git"
+    "url": "git+https://github.com/Amonnium/Data-Explorer.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Amonnium/Data-Explorer/issues"
+  },
+  "homepage": "https://github.com/Amonnium/Data-Explorer#readme",
+  "publishConfig": {
+    "access": "public"
   },
   "exports": {
     ".": "./data-engine.js"
