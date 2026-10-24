@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Data Explorer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="brand"><span class="brand-mark">◆</span>Data Explorer</div>
+      <div class="theme-picker" aria-label="Theme">
+        <button class="theme-button active" data-theme="system">Auto</button>
+        <button class="theme-button" data-theme="light">Light</button>
+        <button class="theme-button" data-theme="dark">Dark</button>
+      </div>
+    </header>
+    <main>
+      <aside class="sidebar">
+        <div class="section-heading"><span>FILES</span><button id="refresh" title="Refresh">↻</button></div>
+        <nav id="file-tree" aria-label="File explorer"></nav>
+      </aside>
+      <section class="workspace">
+        <div class="search-wrap">
+          <label for="search">Search JSON and XML</label>
+          <div class="search-box"><span>⌕</span><input id="search" autocomplete="off" placeholder="E.g. first_name, New York, phone_numbers…" /><kbd>Enter</kbd></div>
+        </div>
+        <div id="results" class="results empty"><div class="empty-icon">⌕</div><h1>Explore your data</h1><p>Search for a key, value, or text in this project's JSON and XML data files.</p></div>
+        <article id="viewer" class="viewer hidden">
+          <div class="viewer-head"><div><span class="eyebrow">FILE</span><h2 id="file-name"></h2></div><span id="match-info" class="match-info"></span></div>
+          <pre id="content" aria-label="File content"></pre>
+        </article>
+      </section>
+    </main>
+    <script src="/app.js"></script>
+  </body>
+</html>

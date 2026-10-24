@@ -1,0 +1,23 @@
+{
+  "name": "@amonnium/data-explorer",
+  "version": "1.0.0",
+  "description": "A UI-independent, project-scoped JSON and XML data explorer.",
+  "main": "data-engine.js",
+  "exports": {
+    ".": "./data-engine.js"
+  },
+  "files": [
+    "data-engine.js",
+    "server.js",
+    "public",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "start": "node server.js",
+    "check": "node --check data-engine.js && node --check server.js && node --check public/app.js"
+  }
+}
