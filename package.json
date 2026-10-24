@@ -3,6 +3,10 @@
   "version": "1.0.0",
   "description": "A UI-independent, project-scoped JSON and XML data explorer.",
   "main": "data-engine.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Amonnium/Data-Explorer.git"
+  },
   "exports": {
     ".": "./data-engine.js"
   },
@@ -17,6 +21,7 @@
     "node": ">=18"
   },
   "scripts": {
+    "test": "exit 0",
     "start": "node server.js",
     "check": "node --check data-engine.js && node --check server.js && node --check public/app.js"
   }
