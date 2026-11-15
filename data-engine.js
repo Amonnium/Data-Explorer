@@ -20,7 +20,7 @@ const DEFAULT_IGNORED_FILES = new Set([
 function createDataExplorer({
   root = process.cwd(),
   dataRoots = ['.'],
-  extensions = ['.json', '.xml'],
+  extensions = ['.json', '.xml', '.csv'],
   ignored = []
 } = {}) {
   const projectRoot = path.resolve(root);

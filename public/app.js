@@ -98,7 +98,7 @@ async function runSearch() {
   viewer.classList.add('hidden');
   if (!query) {
     results.className = 'results empty';
-    results.innerHTML = '<div class="empty-icon">⌕</div><h1>Explore your data</h1><p>Search for a key, value, or text in this project\'s JSON and XML data files.</p>';
+    results.innerHTML = '<div class="empty-icon">⌕</div><h1>Explore your data</h1><p>Search for a key, value, or text in this project\'s JSON, XML and CSV data files.</p>';
     return;
   }
   results.className = 'results';

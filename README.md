@@ -1,6 +1,6 @@
 # Data Explorer
 
-A small, local browser UI and a UI-independent Node.js engine for safely exploring and searching JSON and XML data in a project.
+A small, local browser UI and a UI-independent Node.js engine for safely exploring and searching JSON, XML, and CSV data in a project.
 
 ## Install in a project
 
@@ -9,7 +9,7 @@ This package is a project dependency: it does not install anything globally on y
 To install it into a project that should use the engine, install it from **npm**, with this command:
 
 ```bash
-npm install --save @amonnium/data-explorer
+npm install --save-dev @amonnium/data-explorer
 ```
 
 ## Use the engine in any frontend or API
@@ -22,7 +22,7 @@ const { createDataExplorer } = require('@amonnium/data-explorer');
 const explorer = createDataExplorer({
   root: process.cwd(),
   dataRoots: ['data', 'fixtures'],
-  extensions: ['.json', '.xml']
+  extensions: ['.json', '.xml', '.csv']
 });
 
 const files = await explorer.listFiles();
@@ -46,7 +46,7 @@ Open [http://localhost:3000](http://localhost:3000). The included interface scan
 
 `createDataExplorer(options)` returns:
 
-- `listFiles()` — a tree of selected JSON and XML data files.
+- `listFiles()` — a tree of selected JSON, XML, and CSV data files.
 - `search(query)` — case-insensitive text matches with file paths, line numbers, columns, and previews.
 - `readFile(relativePath)` — safely reads one selected data file.
 
